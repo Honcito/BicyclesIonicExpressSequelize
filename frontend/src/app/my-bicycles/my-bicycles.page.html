@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>my-bicycles</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">my-bicycles</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+<!-- Añadir la vista para mostrar la información del Array de bicicletas -->
+<ion-list>
+  <ion-item *ngFor="let b of bicycles">
+    <ion-label>
+      <h1>{{b.brand}}</h1>
+      <p>{{b.model}}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>
